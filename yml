@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: scheme-capital-backend
+    env: node
+    rootDir: backend
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: MONGO_URI
+        value: your_mongodb_url
+      - key: JWT_SECRET
+        value: your_jwt_secret
